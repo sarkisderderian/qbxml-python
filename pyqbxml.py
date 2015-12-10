@@ -25,7 +25,7 @@ qbxml_query =
 qbxml_response = s.ProcessRequest(t, qbxml_query)
 
 #Disconnect connection
-s,t=connection.disconnect()
+connection.disconnect(s)
 
 
 # Parse the response by Element Tree 
