@@ -16,7 +16,7 @@ qbxml_query =
 <QBXML>
    <QBXMLMsgsRq onError="continueOnError">
       <AccountQueryRq>
-		 <IncludeRetElement>Name</IncludeRetElement>
+	<IncludeRetElement>Name</IncludeRetElement>
          <IncludeRetElement>Balance</IncludeRetElement>
       </AccountQueryRq>
    </QBXMLMsgsRq>
