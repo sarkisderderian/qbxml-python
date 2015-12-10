@@ -1,12 +1,12 @@
 #!usr/bin/python
 __madeby__="Sarkis Derderian"
 #import library for connect to quickbook but note you shoud have admin access
-import connect
+import connection
 
 path="C:\Documents and Settings\All Users\Documents\Intuit\QuickBooks\Company Files\demo.qbw"
 name="demo"
 
-s,t=connect.start(name,path)
+s,t=connection.connect(name,path)
 
 
 # Send query and receive responsec
