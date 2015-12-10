@@ -1,5 +1,5 @@
 #!usr/bin/python
-__Authorization__="Sarkis Derderian"
+__madeby__="Sarkis Derderian"
 #import library for connect to quickbook but note you shoud have admin access
 import connect
 
