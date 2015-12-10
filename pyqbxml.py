@@ -5,7 +5,7 @@ import connection
 
 path="C:\Documents and Settings\All Users\Documents\Intuit\QuickBooks\Company Files\demo.qbw"
 name="demo"
-
+#Connect to Quickbooks
 s,t=connection.connect(name,path)
 
 
@@ -25,8 +25,7 @@ qbxml_query =
 qbxml_response = s.ProcessRequest(t, qbxml_query)
 
 #Disconnect connection
-s.EndSession(t)
-s.CloseConnection()
+s,t=connection.disconnect()
 
 
 # Parse the response by Element Tree 
