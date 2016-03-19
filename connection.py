@@ -1,11 +1,13 @@
 import win32com.client
 import xml.etree.ElementTree as Et
 
-def connect(company_name,company_file_path):
+# i remove the second parameter (company_file_path) becuase i want to be only with opened file.
+def connect(company_name):
     #Connect 
     sessionManager = win32com.client.Dispatch("QBXMLRP2.RequestProcessor")
     sessionManager.OpenConnection('', company_name)
-    ticket = sessionManager.BeginSession(company_file_path, 0)
+    # i remove the first parameter (company_file_path) becuase i want to be only with opened file.
+    ticket = sessionManager.BeginSession('', 1)
     return (sessionManager,ticket)
 
 def disconect(SessionManager):
