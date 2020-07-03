@@ -10,8 +10,7 @@ s,t=connection.connect(name,path)
 
 
 # Send query and receive responsec
-qbxml_query = 
-"""
+qbxml_query ="""
 <?qbxml version="4.0"?>
 <QBXML>
    <QBXMLMsgsRq onError="continueOnError">
@@ -37,5 +36,5 @@ AccountRet=QBXMLMsgRs.getiterator("AccountRet")
 for a in AccountRet:
     names=a.find('Name').text
     balances=a.find('Balance').text
-    print names,"\t|\t",balances
+    print(names,"\t|\t",balances)
 
