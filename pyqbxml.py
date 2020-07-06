@@ -1,7 +1,7 @@
 #!usr/bin/python
 __madeby__="Sarkis Derderian"
 
-#Shuld be Quickbooks opened
+#Should be Quickbooks opened
 import win32com.client
 import xml.etree.ElementTree
 
