@@ -1,6 +1,7 @@
 #!usr/bin/python
 __madeby__="Sarkis Derderian"
-#import library for connect to quickbook but note you shoud have admin access
+
+#Shuld be Quickbooks opened
 import win32com.client
 import xml.etree.ElementTree
 
